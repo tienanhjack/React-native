@@ -1,80 +1,70 @@
-# React-native
-bộ khởi động  npx create-expo-app@latest
-bộ truy cập cd my-app 
-mở npm start
- npx đi kèm với npm 5.2+ trở lên, xem hướng dẫn cho các phiên bản npm cũ hơn )
+# Getting Started with Create React App
 
-Sau đó mở http://localhost:3000/ để xem ứng dụng của bạn.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Khi bạn đã sẵn sàng triển khai vào sản xuất, hãy tạo một gói thu nhỏ bằng npm run build.
+## Available Scripts
 
-npm bắt đầu
+In the project directory, you can run:
 
-Bắt đầu 
-Bạn không cần phải cài đặt hoặc cấu hình các công cụ như webpack hoặc Babel. Chúng được cấu hình sẵn và ẩn để bạn có thể tập trung vào mã.
+### `npm start`
 
-Tạo một dự án và bạn đã sẵn sàng.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-Tạo 
-Bạn sẽ cần phải có Node >= 14 trên máy phát triển cục bộ của mình (nhưng không bắt buộc trên máy chủ). Bạn có thể sử dụng nvm (macOS/Linux) hoặc nvm-windows để chuyển đổi phiên bản Node giữa các dự án khác nhau.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-Để tạo ứng dụng mới, bạn có thể chọn một trong các phương pháp sau:
+### `npm test`
 
-npx create-react-app my-app
-( npx đi kèm với npm 5.2+ trở lên, xem hướng dẫn cho các phiên bản npm cũ hơn )
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-npm init react-app my-app
-npm init <initializer>có sẵn trong npm 6+
+### `npm run build`
 
-yarn create react-app my-app
-yarn createcó sẵn trong Yarn 0.25+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Chọn 
-Bây giờ bạn có thể tùy chọn khởi động một ứng dụng mới từ mẫu bằng cách thêm --template [template-name]vào lệnh tạo.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-Nếu bạn không chọn mẫu, chúng tôi sẽ tạo dự án của bạn bằng mẫu cơ sở của chúng tôi.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-Các mẫu luôn được đặt tên theo định dạng cra-template-[template-name], tuy nhiên bạn chỉ cần cung cấp [template-name]cho lệnh tạo.
+### `npm run eject`
 
-npx create-react-app my-app --template [template-name]
-Bạn có thể tìm danh sách các mẫu có sẵn bằng cách tìm kiếm "cra-template- * " trên npm.
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-Tài liệu Mẫu tùy chỉnh của chúng tôi mô tả cách bạn có thể xây dựng mẫu của riêng mình.
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Tạo 
-Bạn có thể bắt đầu một ứng dụng TypeScript mới bằng cách sử dụng mẫu. Để sử dụng mẫu TypeScript do chúng tôi cung cấp, hãy thêm --template typescriptvào lệnh tạo.
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-npx create-react-app my-app --template typescript
-Nếu bạn đã có một dự án và muốn thêm TypeScript, hãy xem tài liệu Thêm TypeScript của chúng tôi .
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-Chọn trình 
-Khi bạn tạo một ứng dụng mới, CLI sẽ sử dụng npm hoặc Yarn để cài đặt các phụ thuộc, tùy thuộc vào công cụ bạn sử dụng để chạy create-react-app. Ví dụ:
+## Learn More
 
-# Run this to use npm
-npx create-react-app my-app
-# Or run this to use yarn
-yarn create react-app my-app
-Chạy bất kỳ lệnh nào trong số các lệnh này sẽ tạo một thư mục có tên my-appbên trong thư mục hiện tại. Bên trong thư mục đó, nó sẽ tạo cấu trúc dự án ban đầu và cài đặt các phụ thuộc chuyển tiếp:
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-my-app
-├── README.md
-├── node_modules
-├── package.json
-├── .gitignore
-├── public
-│   ├── favicon.ico
-│   ├── index.html
-│   ├── logo192.png
-│   ├── logo512.png
-│   ├── manifest.json
-│   └── robots.txt
-└── src
-    ├── App.css
-    ├── App.js
-    ├── App.test.js
-    ├── index.css
-    ├── index.js
-    ├── logo.svg
-    ├── serviceWorker.js
-    └── setupTests.js
-Không cần cấu hình hay cấu trúc thư mục phức tạp, chỉ cần các tệp bạn cần để xây dựng ứng dụng. Sau khi cài đặt xong, bạn có thể mở thư mục dự án của mình:
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
